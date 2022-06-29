@@ -29,7 +29,7 @@ const Header = () => {
 
         <ul>
             <Link href="/">Forside</Link>
-            <Link href="./about">{data.items[0].title}</Link>
+            <Link href="./about">Her er{data.items[0].title}</Link>
             <Link href="./latest">{data.items[1].title}</Link>
             <Link href="./practices">{data.items[2].title}</Link>
             <Link href="./contact">{data.items[3].title}</Link>
