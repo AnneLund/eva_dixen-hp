@@ -8,7 +8,7 @@ const About = () => {
  
     useEffect(() => {
       setLoading(true)
-      fetch('http://localhost/wordpress/eva-dixen/wp-json/wp/v2/pages/19')
+      fetch('https://database.evadixen.dk/wp-json/wp/v2/pages/96')
         .then((res) => res.json())
         .then((data) => {
           setData(data)

@@ -8,7 +8,7 @@ const Practices = () => {
  
     useEffect(() => {
       setLoading(true)
-      fetch('http://localhost/wordpress/eva-dixen/wp-json/wp/v2/pages/24')
+      fetch('https://database.evadixen.dk/wp-json/wp/v2/pages/14')
         .then((res) => res.json())
         .then((data) => {
           setData(data)
@@ -20,7 +20,7 @@ const Practices = () => {
   
     if (isLoading) return <p>Loading...</p>
     if (!data) return <p>No profile data</p>
-  
+    console.log(data)  
     return(
 
 <section className={styles.main}>

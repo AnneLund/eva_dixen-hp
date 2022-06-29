@@ -8,7 +8,7 @@ const About = () => {
  
     useEffect(() => {
       setLoading(true)
-      fetch('http://localhost/wordpress/eva-dixen/wp-json/wp/v2/pages/5')
+      fetch('https://database.evadixen.dk/wp-json/wp/v2/pages/12')
         .then((res) => res.json())
         .then((data) => {
           setData(data)
@@ -26,7 +26,7 @@ const About = () => {
 <section className={styles.main}>
     <h1>Om Eva</h1>
     <div>
-        {data.yoast_head_json.og_description}
+        {data.title.rendered}
     </div>
 </section>
     )

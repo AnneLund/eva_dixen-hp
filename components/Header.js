@@ -8,7 +8,7 @@ const Header = () => {
  
     useEffect(() => {
       setLoading(true)
-      fetch('http://localhost/wordpress/eva-dixen/wp-json/menus/v1/menus/main')
+      fetch('https://database.evadixen.dk/wp-json/menus/v1/menus/main')
         .then((res) => res.json())
         .then((data) => {
           setData(data)
@@ -25,12 +25,14 @@ const Header = () => {
 
 <header className={styles.header}>
     <nav className={styles.nav}>
+
+
         <ul>
             <Link href="/">Forside</Link>
-            <Link href="./about">{data.items[1].title}</Link>
-            <Link href="./latest">{data.items[3].title}</Link>
+            <Link href="./about">{data.items[0].title}</Link>
+            <Link href="./latest">{data.items[1].title}</Link>
             <Link href="./practices">{data.items[2].title}</Link>
-            <Link href="./contact">{data.items[4].title}</Link>
+            <Link href="./contact">{data.items[3].title}</Link>
 
 </ul>
 </nav>
