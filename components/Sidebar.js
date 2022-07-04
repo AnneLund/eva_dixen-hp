@@ -1,6 +1,7 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import {useState, useEffect} from 'react'
+import Link from 'next/link'
 
 export default props => {
   const [data, setData] = useState(null)
@@ -25,25 +26,26 @@ export default props => {
   return (
     // Pass on our props
     <Menu {...props}>
-      <a className="menu-item" href="/">
+     
+      <Link className="menu-item" href="/">
         Forside
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/about">
+      <Link className="menu-item" href="/about">
       {data.items[0].title}
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/latest">
+      <Link className="menu-item" href="/latest">
       {data.items[1].title}
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/practices">
+      <Link className="menu-item" href="/practices">
       {data.items[2].title}
-      </a>
+      </Link>
 
-      <a className="menu-item" href="/contact">
+      <Link className="menu-item" href="/contact">
       {data.items[3].title}
-      </a>
+      </Link>
     </Menu>
   );
 };
