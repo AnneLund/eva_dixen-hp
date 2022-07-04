@@ -3,7 +3,7 @@ import { slide as Menu } from "react-burger-menu";
 import {useState, useEffect} from 'react'
 import Link from 'next/link'
 
-export default props => {
+const Sidebar = (props) => {
   const [data, setData] = useState(null)
   const [isLoading, setLoading] = useState(false)
 
@@ -58,3 +58,5 @@ export default props => {
     </Menu>
   );
 };
+
+export default Sidebar;
