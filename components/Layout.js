@@ -1,12 +1,12 @@
-import Header from './Header' 
 import Footer from './Footer'   
+import Sidebar from './Sidebar'
 
 const Layout = ({ children }) => {
     return(
-<div className="content">
-    <Header/>
-    {children}
-    <Footer/>
+<div id='App'>
+<Sidebar right pageWrapId={"page-wrap"} outerContainerId={"App"}/>
+  {children}  
+<Footer/>
 </div>
     )
 }

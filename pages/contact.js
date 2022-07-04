@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react'
 
 const Contact = () => {
     const [data, setData] = useState(null)
-    const [isLoading, setLoading] = useState(false)
+    const [isLoading, setLoading] = useState(true)
  
     useEffect(() => {
       setLoading(true)
@@ -18,16 +18,16 @@ const Contact = () => {
      
     }, [])
   
-    if (isLoading) return <p>Loading...</p>
-    if (!data) return <p>No profile data</p>
-    console.log(data)    
+    if (isLoading) return 
+  if (!data) return 
+    
     return(
 
 <section className={styles.main}>
     <h1>Kontakt</h1>
-    <div>
+    {/* <div>
         {data.yoast_head_json.og_description}
-    </div>
+    </div> */}
 </section>
     )
 }

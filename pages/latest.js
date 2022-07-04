@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react'
 
 const About = () => {
     const [data, setData] = useState(null)
-    const [isLoading, setLoading] = useState(false)
+    const [isLoading, setLoading] = useState(true)
  
     useEffect(() => {
       setLoading(true)
@@ -18,9 +18,9 @@ const About = () => {
      
     }, [])
   
-    if (isLoading) return <p>Loading...</p>
-    if (!data) return <p>No profile data</p>
-    console.log(data)    
+    if (isLoading) return 
+    if (!data) return 
+  
     return(
 
 <section className={styles.main}>
