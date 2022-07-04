@@ -26,26 +26,35 @@ export default props => {
   return (
     // Pass on our props
     <Menu {...props}>
-     
-      <Link className="menu-item" href="/">
-        Forside
+    <li className="menu-item">
+        <Link href="/">
+       Forside
+      </Link>  
+    </li> 
+  
+    <li className="menu-item">
+      <Link href="/about">
+    {data.items[0].title}
       </Link>
+    </li>
 
-      <Link className="menu-item" href="/about">
-      {data.items[0].title}
+    <li className="menu-item">
+      <Link href="/latest">
+    {data.items[1].title}
       </Link>
+    </li>
 
-      <Link className="menu-item" href="/latest">
-      {data.items[1].title}
+    <li className="menu-item">
+      <Link href="/practices">
+   {data.items[2].title}
       </Link>
+</li>
 
-      <Link className="menu-item" href="/practices">
-      {data.items[2].title}
+<li className="menu-item">
+      <Link  href="/contact">
+     {data.items[3].title}
       </Link>
-
-      <Link className="menu-item" href="/contact">
-      {data.items[3].title}
-      </Link>
+</li>
     </Menu>
   );
 };
