@@ -1,5 +1,6 @@
 import '../styles/globals.scss'
 import '../styles/Home.module.scss'
+import '../styles/leafs.scss'
 import Layout from '../components/Layout'
 
 

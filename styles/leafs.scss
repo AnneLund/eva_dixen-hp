@@ -1,0 +1,93 @@
+.leafs{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  ///////////////////BLAD 1///////////////
+
+  .leaf1{
+    animation: fall1 12s ease-in-out infinite;
+   
+  }
+  
+  @keyframes fall1 {
+    0% {
+      transform: translateY(-50%) rotateX(0deg);
+     
+    
+    }
+    100% {
+      transform: translateY(100%) rotateX(360deg);
+    
+    }
+  }
+
+  ///////////////////BLAD 2///////////////
+
+  .leaf2{
+    animation: fall2 15s ease-in-out infinite;
+  }
+  
+  @keyframes fall2 {
+    0% {
+      transform: translateY(-50%) rotateX(0deg);
+    
+    }
+    100% {
+      transform: translateY(100%) rotateX(-360deg);
+    }
+  }
+
+  ///////////////////BLAD 3///////////////
+
+  .leaf3{
+    animation: fall3 20s ease-in-out infinite;
+  }
+  
+  @keyframes fall3 {
+    0% {
+      transform: translateY(-50%) rotateX(20deg) rotateY(0deg);
+    
+    }
+    100% {
+      transform: translateY(100%) rotateX(360deg) rotateY(-360deg);
+    }
+  }
+
+  ///////////////////BLAD 4///////////////
+
+  .leaf4{
+    animation: fall4 13s ease-in-out infinite;
+  }
+  
+  @keyframes fall4 {
+    0% {
+      transform: translateY(-50%) rotateY(0deg);
+    
+    }
+    100% {
+      transform: translateY(100%) rotateY(360deg);
+    }
+  }
+
+  ///////////////////BLAD 5///////////////
+
+  .leaf6{
+    animation: fall6 18s ease-in-out infinite;
+  }
+  
+  @keyframes fall6 {
+    0% {
+      transform: translateY(-50%) rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+      transform: translateY(100%) rotateX(360deg) rotateY(360deg);
+    }
+  }
+  
+  
