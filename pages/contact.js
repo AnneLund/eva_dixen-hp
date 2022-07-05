@@ -25,9 +25,9 @@ const Contact = () => {
 
 <section className={styles.main}>
     <h1>Kontakt</h1>
-    {/* <div>
+    <div>
         {data.yoast_head_json.og_description}
-    </div> */}
+    </div>
 </section>
     )
 }
