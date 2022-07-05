@@ -18,16 +18,64 @@ const Contact = () => {
      
     }, [])
   
-    if (isLoading) return 
+  if (isLoading) return 
   if (!data) return 
+  console.log(data)
+
+//   [
+//     {
+//         "key": "group_62bc18c0a2e5e",
+//         "title": "Tilmeld nyhedsbrev",
+//         "fields": [
+//             {
+//                 "key": "field_62bc18ddd5a03",
+//                 "label": "Email",
+//                 "name": "email",
+//                 "type": "email",
+//                 "instructions": "",
+//                 "required": 1,
+//                 "conditional_logic": 0,
+//                 "wrapper": {
+//                     "width": "",
+//                     "class": "",
+//                     "id": ""
+//                 },
+//                 "default_value": "",
+//                 "placeholder": "Din email:",
+//                 "prepend": "",
+//                 "append": ""
+//             }
+//         ],
+//         "location": [
+//             [
+//                 {
+//                     "param": "page",
+//                     "operator": "==",
+//                     "value": "12"
+//                 }
+//             ]
+//         ],
+//         "menu_order": 0,
+//         "position": "normal",
+//         "style": "default",
+//         "label_placement": "top",
+//         "instruction_placement": "label",
+//         "hide_on_screen": "",
+//         "active": true,
+//         "description": "",
+//         "show_in_rest": 1
+//     }
+// ]
+
     
     return(
 
 <section className={styles.main}>
     <h1>Kontakt</h1>
-    <div>
+    <article styles={styles.main}>
         {data.yoast_head_json.og_description}
-    </div>
+    </article>
+
 </section>
     )
 }

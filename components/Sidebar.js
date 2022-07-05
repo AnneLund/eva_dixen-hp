@@ -2,6 +2,7 @@ import React from "react";
 import { stack as Menu } from "react-burger-menu";
 import {useState, useEffect} from 'react'
 import Link from 'next/link'
+import styles from '../styles/Home.module.scss'
 
 const Sidebar = (props) => {
   const [data, setData] = useState(null)
@@ -26,6 +27,9 @@ const Sidebar = (props) => {
   return (
     // Pass on our props
     <Menu {...props}>
+
+      <nav>
+        <ul>
     <li className="menu-item">
         <Link href="/">
        Forside
@@ -55,6 +59,8 @@ const Sidebar = (props) => {
      {data.items[3].title}
       </Link>
 </li>
+</ul>
+</nav>
     </Menu>
   );
 };

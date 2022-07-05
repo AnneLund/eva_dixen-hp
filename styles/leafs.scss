@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
+    top: -10%;
     overflow: hidden;
     z-index: 0;
   }
@@ -17,7 +18,7 @@
   
   @keyframes fall1 {
     0% {
-      transform: translateY(-50%) rotateX(0deg);
+      transform: translateY(0%) rotateX(0deg);
      
     
     }
@@ -35,7 +36,7 @@
   
   @keyframes fall2 {
     0% {
-      transform: translateY(-50%) rotateX(0deg);
+      transform: translateY(0%) rotateX(0deg);
     
     }
     100% {
@@ -51,7 +52,7 @@
   
   @keyframes fall3 {
     0% {
-      transform: translateY(-50%) rotateX(20deg) rotateY(0deg);
+      transform: translateY(0%) rotateX(20deg) rotateY(0deg);
     
     }
     100% {
@@ -67,7 +68,7 @@
   
   @keyframes fall4 {
     0% {
-      transform: translateY(-50%) rotateY(0deg);
+      transform: translateY(0%) rotateY(0deg);
     
     }
     100% {
@@ -83,7 +84,7 @@
   
   @keyframes fall6 {
     0% {
-      transform: translateY(-50%) rotateX(0deg) rotateY(0deg);
+      transform: translateY(0%) rotateX(0deg) rotateY(0deg);
     }
     100% {
       transform: translateY(100%) rotateX(360deg) rotateY(360deg);

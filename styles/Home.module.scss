@@ -1,23 +1,34 @@
+
+
 .main {
-  min-height: 100vh;
+  min-height: 90vh;
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: black;
+
+  article{
+    margin: 0 5em;
+    text-align: center;
+  }
 }
 
 
 .footer {
   display: flex;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
-  align-items: center;
-a{
+
+
+p{
  display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;  
+}
+span{
+  margin-left: 10px;
 }
 }
 

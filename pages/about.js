@@ -25,9 +25,9 @@ const About = () => {
 
 <section className={styles.main}>
     <h1>Om Eva</h1>
-      <div>
+      <article styles={styles.main}>
         {data.yoast_head_json.og_description}
-    </div>
+    </article>
 </section>
     )
 }
