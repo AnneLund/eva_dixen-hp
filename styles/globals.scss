@@ -77,14 +77,14 @@ li {
   right: 36px;
   top: 36px;
   color: rgba(0, 0, 0, 0.495);
+  /* Color/shape of burger icon bars */
+
 }
 
-/* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #0000007a;
-  border-radius: 40%;
+background: #000000cb;
+max-height: 15%;
 }  
-
 
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
