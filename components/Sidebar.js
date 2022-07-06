@@ -1,5 +1,5 @@
 import React from "react";
-import { stack as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import {useState, useEffect} from 'react'
 import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.scss'
 const Sidebar = (props) => {
   const [data, setData] = useState(null)
   const [isLoading, setLoading] = useState(false)
-
+  
   useEffect(() => {
     setLoading(true)
     fetch('https://database.evadixen.dk/wp-json/menus/v1/menus/main')
@@ -23,22 +23,38 @@ const Sidebar = (props) => {
   if (isLoading) return 
   if (!data) return 
 
+ 
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
+  };
+  const isMenuOpen = function(state) {
+    console.log(state.isOpen)
+    return state.isOpen;
+  };
 
   return (
-    // Pass on our props
-    <Menu {...props}>
-
+    <>
+   <Menu 
+   onStateChange={isMenuOpen}
+   isOpen={isMenuOpen}
+    {...props} >
+ 
       <nav>
+
         <ul>
+         
     <li className="menu-item">
-        <Link href="/">
-       Forside
+        <Link   href="/">
+      <a onClick = {()=>handleCloseMenu} title="home" >Forside</a> 
       </Link>  
-    </li> 
+    </li>   
+          
+
   
     <li className="menu-item">
       <Link href="/about">
-    {data.items[0].title}
+        <a title="about">{data.items[0].title}</a>
+    
       </Link>
     </li>
 
@@ -60,9 +76,12 @@ const Sidebar = (props) => {
       </Link>
 </li>
 </ul>
+
 </nav>
+
     </Menu>
-  );
+    </> 
+    );
 };
 
 export default Sidebar;

@@ -8,8 +8,7 @@ const Footer = () => {
 <p>Kontaktoplysninger</p>
 <p>Persondata-politik</p>
 <p><FaCopyright/><span>Copyright 2022</span></p>
-
-  </footer>
+</footer>
     )
 }
 
