@@ -7,6 +7,7 @@ import styles from '../styles/Home.module.scss'
 const Sidebar = (props) => {
   const [data, setData] = useState(null)
   const [isLoading, setLoading] = useState(false)
+  const [isMenuOpen, handleMenu] = useState(false);
   
   useEffect(() => {
     setLoading(true)
@@ -25,62 +26,61 @@ const Sidebar = (props) => {
 
  
   const handleCloseMenu = () => {
-    setIsMenuOpen(false);
+    handleMenu(false);
   };
-  const isMenuOpen = function(state) {
+
+  const handleStateChange = (state) => {
     console.log(state.isOpen)
-    return state.isOpen;
+    handleMenu(state.isOpen);
   };
 
   return (
-    <>
+  <>
    <Menu 
-   onStateChange={isMenuOpen}
+   onStateChange={handleStateChange}
    isOpen={isMenuOpen}
     {...props} >
  
-      <nav>
-
+      <nav >
         <ul>
          
     <li className="menu-item">
-        <Link   href="/">
-      <a onClick = {()=>handleCloseMenu} title="home" >Forside</a> 
+        <Link href="/">
+      <a onClick = {() => handleCloseMenu()} title="home" >Forside</a> 
       </Link>  
     </li>   
-          
-
-  
+            
     <li className="menu-item">
       <Link href="/about">
-        <a title="about">{data.items[0].title}</a>
-    
+        <a onClick = {() => handleCloseMenu()} title="about">{data.items[0].title}</a>
       </Link>
     </li>
 
     <li className="menu-item">
-      <Link href="/latest">
-    {data.items[1].title}
-      </Link>
+
+         <Link href="/latest">
+         <a onClick = {() => handleCloseMenu()} title="latest">{data.items[1].title}</a>     
+        </Link> 
     </li>
+
 
     <li className="menu-item">
       <Link href="/practices">
-   {data.items[2].title}
+          <a onClick = {() => handleCloseMenu()} title="practices">{data.items[2].title}</a>     
       </Link>
-</li>
+    </li>
 
-<li className="menu-item">
+    <li className="menu-item">
       <Link  href="/contact">
-     {data.items[3].title}
+          <a title="contact" onClick = {() => handleCloseMenu()}>     {data.items[3].title}</a>
       </Link>
-</li>
-</ul>
+   </li>
 
+</ul>
 </nav>
 
     </Menu>
-    </> 
+    </>
     );
 };
 
