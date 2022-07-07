@@ -42,7 +42,6 @@ h1, h2, h3, h4, li{
 
 /* General sidebar styles */
 nav {
-  padding: 2em;
   font-size: 1.5em;
   background-color: $color1;
   display: flex;
@@ -55,7 +54,6 @@ nav {
   ul{
    display: flex;
    flex-direction: column;
-   max-width: 90vh;
    
 
     li{
