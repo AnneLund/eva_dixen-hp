@@ -10,11 +10,16 @@ $color2: #ddd1b3;
   justify-content: center;
   align-items: center;
   color: black;
+  position: relative;
+  z-index: 5;
  
 
   article{
     margin: 0 5em;
-    text-align: center; 
+    text-align: center;
+    font-size: 30px; 
+
+   
   }
 }
 

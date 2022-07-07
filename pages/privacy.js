@@ -24,7 +24,7 @@ const Privacy = () => {
     return(
 
 <section className={styles.main}>
-    <h1>Persondata-politik</h1>
+<h1>{data[0].title.rendered}</h1>
     <article styles={styles.main}>
      {data[0].yoast_head_json.og_description}
      </article>

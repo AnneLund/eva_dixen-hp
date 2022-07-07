@@ -24,7 +24,7 @@ if (isLoading) return
     return(
 
 <section className={styles.main}>
-    <h1>Foredrag</h1>
+<h1>{data.title.rendered}</h1>
     <article styles={styles.main}>
         {data.yoast_head_json.og_description}
     </article>
