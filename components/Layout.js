@@ -1,14 +1,11 @@
 import Footer from './Footer'   
 import Sidebar from './Sidebar'
 import Leafs from './Leafs'
-import {useState, useEffect} from 'react'
 
 
 const Layout = ({ children }) => {
-   
 
-
-    return(
+return(
 <div id='App'>
 
 <Sidebar 

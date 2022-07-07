@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@wordpress/api-fetch": "^6.9.0",
     "mysql": "^2.18.1",
     "next": "12.1.6",
     "next-auth": "^4.8.0",

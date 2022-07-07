@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import {useState, useEffect} from 'react'
+import Loading from '../components/Loading'
 
 const About = () => {
     const [data, setData] = useState(null)
@@ -18,7 +19,7 @@ const About = () => {
      
     }, [])
   
-    if (isLoading) return 
+    if (isLoading) return <Loading/>
     if (!data) return 
      
     return(
