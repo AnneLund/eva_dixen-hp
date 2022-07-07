@@ -42,7 +42,7 @@ const Sidebar = (props) => {
    isOpen={isMenuOpen}
     {...props} >
  
-      <nav>
+      <nav className={styles.grid}>
         <ul>
 
     <li className="menu-item">   
