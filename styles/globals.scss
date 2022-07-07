@@ -25,7 +25,7 @@ h1{
   font-size: 4em;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, li{
   font-family: 'Caveat', cursive;
 }
 
@@ -42,36 +42,43 @@ h1, h2, h3, h4{
 
 /* General sidebar styles */
 nav {
-  padding: 2em 0.1em 0.1em;
-  font-size: 1.3em;
+  padding: 2em;
+  font-size: 1.5em;
   background-color: $color1;
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  position: relative;
+}
 
   ul{
    display: flex;
    flex-direction: column;
-    align-items: center;
+   max-width: 90vh;
+   
 
-li {
-  display: flex;
-  text-decoration: none;
-  margin-bottom: 20px;
-  color: #000000;
-  transition: color 0.2s;
+    li{
+      list-style-type: none;
+      margin-bottom: 30px;
+      color: #000000;
+      transition: color 0.2s;
+      font-weight: 600;
 
+        &:hover{
+          transform: rotateZ(10deg);
+          transition: 300ms;  
+        } 
 
-  &:hover{
-   color: $color1;
-   transition: 300ms;  
-  } 
-}  
+        .leaf_menu{
+          &:hover{
+            transform: rotateX(360deg);
+            transition: 600ms;
+          }
+       
+    }  
   }
-
-
 }
+
 
 .bm-burger-button {
   position: fixed;
@@ -115,6 +122,10 @@ max-height: 15%;
   background: rgba(93, 93, 93, 0.3);
   
 }
+
+
+
+
 
 
 

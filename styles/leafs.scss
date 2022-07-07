@@ -9,12 +9,32 @@
     top: -5%;
 
   }
+
+ 
+
+//   .leaf1_menu{
+//     position: absolute;
+//   }
+//   .leaf2_menu{
+
+// }
+// .leaf3_menu{
+
+// }
+
+// .leaf4_menu{
+// position: relative;
+// background-color: red;  
+// }
+
+
   
   ///////////////////BLAD 1///////////////
 
   .leaf1{
     animation: fall1 12s ease infinite ;
-   
+    transform-box: fill-box;
+    transform-origin: center;
   }
   
   @keyframes fall1 {
@@ -32,6 +52,8 @@
 
   .leaf2{
     animation: fall2 15s ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
   }
   
   @keyframes fall2 {
@@ -47,16 +69,18 @@
   ///////////////////BLAD 3///////////////
 
   .leaf3{
-    animation: fall3 20s ease-in-out infinite;
+    animation: fall3 20s ease infinite;
+    transform-box: fill-box;
+    transform-origin: center;
   }
   
   @keyframes fall3 {
     0% {
-      transform: translateY(-10%) rotateX(20deg) rotateY(0deg);
+      transform: translateY(-10%) rotateX(20deg) ;
     
     }
     100% {
-      transform: translateY(100%) rotateX(360deg) rotateY(-360deg);
+      transform: translateY(100%) rotateX(360deg);
     }
   }
 
@@ -64,11 +88,14 @@
 
   .leaf4{
     animation: fall4 13s ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
   }
   
   @keyframes fall4 {
     0% {
       transform: translateY(-10%) rotateY(0deg);
+    
     
     }
     100% {
