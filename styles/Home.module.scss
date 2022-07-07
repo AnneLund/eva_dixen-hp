@@ -39,21 +39,20 @@ span{
 }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
-
-    ul{
+nav{
+ul{
       justify-content: center;
       align-items: center; 
       
       li{
         font-size: 8vw;
       }
-    }
-  
-
+    }  
+}
   }
 }
 
