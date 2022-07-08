@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import {useState, useEffect} from 'react'
 import Loading from '../components/Loading'
+import Image from 'next/image'
+import Layout from './../components/Layout';
 
 export default function Home() {
 
@@ -21,7 +23,7 @@ export default function Home() {
 
 if (isLoading) return <Loading/>
 if (!data) return 
-
+console.log(data)
   return (
     <>
       <Head>
@@ -31,6 +33,11 @@ if (!data) return
       </Head>
       <article className={styles.main}>
         <h1>{data.title.rendered}</h1>
+<Image src="/eva.jpg" 
+width={200} 
+height={200}
+/>
+
       </article>
     </>
   )
