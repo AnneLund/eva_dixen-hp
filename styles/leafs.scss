@@ -1,34 +1,19 @@
+
+body{
+  position: relative;
 .leafs{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 100%;
+    height: 110vh;
     position: absolute;
-    z-index: 0;
     overflow: hidden;
+    z-index: 1;
     top: -5%;
 
-  }
+  }  
+}
 
- 
-
-//   .leaf1_menu{
-//     position: absolute;
-//   }
-//   .leaf2_menu{
-
-// }
-// .leaf3_menu{
-
-// }
-
-// .leaf4_menu{
-// position: relative;
-// background-color: red;  
-// }
-
-
-  
   ///////////////////BLAD 1///////////////
 
   .leaf1{

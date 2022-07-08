@@ -33,10 +33,14 @@ console.log(data)
       </Head>
       <article className={styles.main}>
         <h1 className={styles.grid}>{data.title.rendered}</h1>
-<Image className="eva" src="/eva.jpg" 
+ <picture>
+<Image 
+src="/eva.jpg" 
 width={500} 
 height={500}
-/>
+/>  
+</picture>       
+
 
       </article>
     </>
