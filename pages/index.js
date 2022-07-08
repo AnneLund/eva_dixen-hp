@@ -32,7 +32,7 @@ console.log(data)
         <link rel="icon" href="/logochi.png" />
       </Head>
       <article className={styles.main}>
-        <h1>{data.title.rendered}</h1>
+        <h1 className={styles.grid}>{data.title.rendered}</h1>
 <Image className="eva" src="/eva.jpg" 
 width={500} 
 height={500}
