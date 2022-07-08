@@ -23,7 +23,7 @@ export default function Home() {
 
 if (isLoading) return <Loading/>
 if (!data) return 
-console.log(data)
+
   return (
     <>
       <Head>
@@ -33,7 +33,7 @@ console.log(data)
       </Head>
       <article className={styles.main}>
         <h1 className={styles.grid}>{data.title.rendered}</h1>
- <picture>
+ <picture className="picture">
 <Image 
 src="/eva.jpg" 
 width={500} 
