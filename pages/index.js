@@ -33,9 +33,9 @@ console.log(data)
       </Head>
       <article className={styles.main}>
         <h1>{data.title.rendered}</h1>
-<Image src="/eva.jpg" 
-width={200} 
-height={200}
+<Image className="eva" src="/eva.jpg" 
+width={500} 
+height={500}
 />
 
       </article>

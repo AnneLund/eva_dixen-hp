@@ -12,7 +12,7 @@ $color2: #ddd1b3;
   color: black;
   position: relative;
   z-index: 5;
- 
+
 
   article{
     margin: 0 5em;
@@ -48,7 +48,8 @@ span{
     flex-direction: column;
 ul{
   justify-content: center;
-  align-items: center;   
+  align-items: center; 
+  padding: 0;  
       
       li{
         font-size: 10vw;
