@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react'
 import Loading from '../components/Loading'
 import Image from 'next/image'
 
-const About = () => {
+const Latest = () => {
     const [data, setData] = useState(null)
     const [isLoading, setLoading] = useState(true)
 
@@ -23,31 +23,7 @@ const About = () => {
   
     if (isLoading) return <Loading/>
     if (!data) return 
-
-    const extraContent=<div>
-    <div className="extra-content">
-    der kan være en forbindelse imellem de muskelspændinger, 
-    hun dagligt tynges af, og det gamle ubearbejdede traume, tvinger 
-    det hende til at forholde sig til alt det, hun helst vil glemme. 
-    <p> 
-    For hvis hendes krop virkelig er fanget i et gammelt traume, hvordan 
-    slipper hun den så fri?</p> 
-    <p> Hvordan overbeviser hun den om, at den ikke længere 
-    er i fare? Svarene på de spørgsmål viser sig at ligge i bevægelser – 
-    ikke hvilke som helst, men bevægelser der aktiverer og stimulerer 
-    muskelgrupper, bindevævet og forbindelsen imellem kroppen og sjælen.</p>
-    <p>
-    Flere forskere peger på, at traumer og længerevarende stress sætter sig i 
-    kroppen som fastfrossen energi og noget tyder på, at traumer er langt mere udbredte, end vi går og tror. For i modsætning til vores vante forestilling, behøver traumer nemlig ikke kun at udspringe fra krig, vold, ulykker eller naturkatastrofer. Faktisk kan traumer opstå på baggrund af hændelser, de fleste af os kategoriserer som almindelige hverdagsoplevelser. Og de kan sætte dybe spor.
-    “Tillader vi os selv virkelig at mærke efter, bliver vores oplevelser i livet 
-    langt mere intense, og vi vil føle os mere forbundet til vores omverden og 
-    vores medmennesker. Også når det, vi mærker, måske ikke er så rart.”</p>
-    <p> – Eva Dixen</p>
-    </div>
-</div>
-
-
-      
+ 
     return(
 
 <section className={styles.main}>
@@ -83,4 +59,4 @@ const About = () => {
 }
 
 
-export default About;
+export default Latest;
