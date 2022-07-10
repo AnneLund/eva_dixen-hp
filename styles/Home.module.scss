@@ -13,16 +13,34 @@ $color2: #ddd1b3;
 
 
   article{
-    margin: 0 5em;
+    padding: 0 5em;
     text-align: center;
-    font-size: 30px; 
+  
+    
+    figure{
+      display: grid;
+      grid-template-columns: 40em 40em;
+      margin: 0 2em;
+      position: relative;
+      z-index: 5;
+      text-align: left;
+
+      h4{
+        font-size: 30px;
+      }
+
+      div{
+        padding: 20px;
+      }
+    }
   }
 
-
   picture{
-    margin: 10px;
+    margin: auto;
+    text-align: center;
     position: relative;
     z-index: 0;
+    width: 60%;
   }
 }
 
@@ -54,8 +72,6 @@ span{
     font-size: 4.5em;
     text-align: center; 
    
-
-
 ul{
   justify-content: center;
   align-items: center; 
@@ -65,8 +81,6 @@ ul{
         font-size: 60px;
       }
     }  
-
-   
   }
 }
 
@@ -74,7 +88,6 @@ ul{
 .footer{
       font-size: 0.6em;
     }
-
 }
  
 

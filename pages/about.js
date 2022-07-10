@@ -26,7 +26,7 @@ const About = () => {
 
 <section className={styles.main}>
     <h1>{data.title.rendered}</h1>
-      <article styles={styles.main}>
+      <article>
         {data.yoast_head_json.og_description}
     </article>
 </section>
