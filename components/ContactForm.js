@@ -20,7 +20,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className={styles.main}>
+    <section>
     <h3>Send mig en besked via nedenstående formular:</h3>
     <form ref={form} onSubmit={sendEmail}>
       <label htmlFor="first">Navn</label>

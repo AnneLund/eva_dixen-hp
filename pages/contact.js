@@ -27,10 +27,7 @@ const Contact = () => {
 
 <section className={styles.main}>
 <h1>{data.title.rendered}</h1>
-    <article>
-    <ContactForm/>    
-    </article>
-
+<ContactForm/> 
 </section>
     )
 }
