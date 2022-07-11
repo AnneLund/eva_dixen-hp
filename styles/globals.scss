@@ -149,6 +149,8 @@ footer{
 form{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100%;
   font-size: 20px;
@@ -157,7 +159,11 @@ form{
   textarea,
   input{
     margin: 0.5em;
-    border-width: 0.1em;
+    width: 60%;
+  }
+
+  input{
+    height: 5vh;
   }
 
 @media screen and (max-width: 600px) {
@@ -176,7 +182,6 @@ h3{
     font-size: 20px;
     background-color: white;
     color: inherit;
-    border-width: 1px;
     cursor: pointer;
 
     &:hover{
