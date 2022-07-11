@@ -55,6 +55,8 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 5;
 }
 
 /* General sidebar styles */
@@ -155,6 +157,7 @@ form{
   textarea,
   input{
     margin: 0.5em;
+    border-width: 0.1em;
   }
 
 @media screen and (max-width: 600px) {
@@ -173,7 +176,13 @@ h3{
     font-size: 20px;
     background-color: white;
     color: inherit;
-    border-width: 0.01em;
+    border-width: 1px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: rgb(237, 237, 237);
+      transition: 300ms;
+    }
   }
 }
 
