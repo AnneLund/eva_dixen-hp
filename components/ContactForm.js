@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import styles from '../styles/Home.module.scss'
 
 const ContactUs = () => {
   const form = useRef();
@@ -19,8 +20,9 @@ const ContactUs = () => {
   };
 
   return (
+    <section className={styles.main}>
+    <h3>Send mig en besked via nedenstående formular:</h3>
     <form ref={form} onSubmit={sendEmail}>
-        <h3>Send mig en besked via nedenstående formular:</h3>
       <label htmlFor="first">Navn</label>
       <input type="text" id="first" name="first" required />
 
@@ -29,8 +31,10 @@ const ContactUs = () => {
 
       <label htmlFor="text">Besked</label>
       <textarea name="message" required/>
+
       <button type="submit" value="Send">Send</button>
     </form>
+    </section>
   );
 };
 
