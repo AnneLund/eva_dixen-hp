@@ -19,7 +19,7 @@ $color2: #ddd1b3;
     
     figure{
       display: grid;
-      grid-template-columns: 40em 40em;
+      grid-template-columns: 40vw 40vw;
       margin: 0 2em;
       position: relative;
       z-index: 5;
@@ -72,7 +72,7 @@ span{
     font-size: 4.5em;
     text-align: center; 
    
-ul{
+  ul{
   justify-content: center;
   align-items: center; 
   padding: 0;  
@@ -80,7 +80,8 @@ ul{
       li{
         font-size: 60px;
       }
-    }  
+    }
+  
   }
 }
 
@@ -89,5 +90,12 @@ ul{
       font-size: 0.6em;
     }
 }
+
+// @media screen and (max-width: 600px) {
+//   .figure{
+//   display: flex;
+//   flex-direction: column;      
+//       }
+//   }
  
 

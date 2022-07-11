@@ -30,7 +30,7 @@ const Latest = () => {
 <h1>{data.title.rendered}</h1>
     <article>
         {data.yoast_head_json.og_description}
-        <figure>
+        {/* <figure className={styles.figure}>
             <picture>
                 <Image src="/bog.jpg" alt='sometespeloev' width={300} height={400}/>    
             </picture>
@@ -52,7 +52,7 @@ const Latest = () => {
              </figcaption>
              
    
-        </figure>
+        </figure> */}
     </article>
 </section>
     )
