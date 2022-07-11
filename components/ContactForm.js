@@ -24,7 +24,7 @@ const ContactUs = () => {
     <h3>Send mig en besked via nedenstående formular:</h3>
     <form ref={form} onSubmit={sendEmail}>
       <label htmlFor="first">Navn</label>
-      <input type="text" id="first" name="first" required />
+      <input type="text" id="first" name="user_first" required />
 
       <label htmlFor="email">Email</label>
       <input type="email" id="email" name="user_email" required />
@@ -32,7 +32,7 @@ const ContactUs = () => {
       <label htmlFor="text">Besked</label>
       <textarea name="message" required/>
 
-      <button type="submit" value="Send">Send</button>
+      <button type="submit" id="submit" name="submit"value="Send">Send</button>
     </form>
     </section>
   );

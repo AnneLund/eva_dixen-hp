@@ -51,6 +51,10 @@ h1, h2, h3, h4, li{
 
 section{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* General sidebar styles */
@@ -145,10 +149,12 @@ form{
   flex-direction: column;
   text-align: center;
   width: 100%;
+  font-size: 20px;
 
   label,
-  textarea{
-    margin: 0.5em 0;
+  textarea,
+  input{
+    margin: 0.5em;
   }
 
 @media screen and (max-width: 600px) {
@@ -164,15 +170,17 @@ h3{
     width: 50%;
     margin: 0.5em auto;
     padding: 5px;
+    font-size: 20px;
+    background-color: white;
     color: inherit;
+    border-width: 0.01em;
   }
 }
 
 @media screen and (max-width: 600px) {
   form{
         width: 100%;
-        margin: 0.5em;
-        padding: 0.5;
+        margin: auto 0.5em;
         font-size: 3.5em;
       }
      
