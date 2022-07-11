@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import {useState, useEffect} from 'react'
 import Loading from '../components/Loading'
+import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
     const [data, setData] = useState(null)
@@ -21,14 +22,13 @@ const Contact = () => {
   
   if (isLoading) return <Loading/>
   if (!data) return 
-  console.log(data)
-  
+
     return(
 
 <section className={styles.main}>
 <h1>{data.title.rendered}</h1>
-    <article styles={styles.main}>
-        {data.yoast_head_json.og_description}
+    <article>
+    <ContactForm/>    
     </article>
 
 </section>

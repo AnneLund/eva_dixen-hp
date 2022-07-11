@@ -15,14 +15,15 @@ $color2: #ddd1b3;
   article{
     padding: 0 5em;
     text-align: center;
+    position: relative;
+    z-index: 5;
   
     
     figure{
       display: grid;
       grid-template-columns: 40vw 40vw;
       margin: 0 2em;
-      position: relative;
-      z-index: 5;
+    
       text-align: left;
 
       h4{
@@ -33,6 +34,31 @@ $color2: #ddd1b3;
         padding: 20px;
       }
     }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+      label,
+      textarea{
+        margin: 0.5em 0;
+      }
+
+      h3{
+        font-size: 25px;
+      }
+
+      textarea{
+      height: 10em;  
+      }
+      input[type=submit]{
+        width: 50%;
+        margin: 0.5em auto;
+       
+      }
+    }
+
   }
 
   picture{
@@ -42,6 +68,7 @@ $color2: #ddd1b3;
     z-index: 0;
     width: 60%;
   }
+
 }
 
 
