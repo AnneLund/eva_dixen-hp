@@ -21,13 +21,15 @@ const ContactUs = () => {
   return (
     <form ref={form} onSubmit={sendEmail}>
         <h3>Send mig en besked via nedenstående formular:</h3>
-      <label>Navn</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Besked</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <label htmlFor="first">Navn</label>
+      <input type="text" id="first" name="first" required />
+
+      <label htmlFor="email">Email</label>
+      <input type="email" id="email" name="user_email" required />
+
+      <label htmlFor="text">Besked</label>
+      <textarea name="message" required/>
+      <button type="submit" value="Send">Send</button>
     </form>
   );
 };

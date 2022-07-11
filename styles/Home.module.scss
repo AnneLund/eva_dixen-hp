@@ -39,7 +39,7 @@ $color2: #ddd1b3;
       display: flex;
       flex-direction: column;
       width: 100%;
-      
+
       label,
       textarea{
         margin: 0.5em 0;
@@ -49,13 +49,20 @@ $color2: #ddd1b3;
         font-size: 25px;
       }
 
+      
+@media screen and (max-width: 600px) {
+  h3{
+        font-size: 0.6em;
+      }
+     
+  }
       textarea{
       height: 10em;  
       }
-      input[type=submit]{
+      button{
         width: 50%;
         margin: 0.5em auto;
-       
+        padding: 5px;
       }
     }
 
@@ -98,7 +105,7 @@ span{
     flex-direction: column;
     font-size: 4.5em;
     text-align: center; 
-   
+
   ul{
   justify-content: center;
   align-items: center; 
@@ -112,11 +119,6 @@ span{
   }
 }
 
-@media screen and (max-width: 600px) {
-.footer{
-      font-size: 0.6em;
-    }
-}
 
 // @media screen and (max-width: 600px) {
 //   .figure{
