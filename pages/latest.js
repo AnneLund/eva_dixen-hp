@@ -53,6 +53,9 @@ const Latest = () => {
              
    
         </figure> */}
+
+
+        <Link href="https://buy.stripe.com/28ocNG4Xb4mV0GA6oo">Køb</Link>
     </article>
 </section>
     )

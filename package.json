@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@stripe/stripe-js": "^1.32.0",
     "@wordpress/api-fetch": "^6.9.0",
+    "axios": "^0.27.2",
     "emailjs-com": "^3.2.0",
+    "lodash": "^4.17.21",
     "mysql": "^2.18.1",
     "next": "12.1.6",
     "next-auth": "^4.8.0",
@@ -25,10 +28,14 @@
     "react-toastify": "^9.0.5",
     "read-more-react": "^1.0.10",
     "sass": "^1.53.0",
-    "serverless-mysql": "^1.5.4"
+    "serverless-mysql": "^1.5.4",
+    "stripe": "^9.12.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
     "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6"
   }
 }

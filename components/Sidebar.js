@@ -79,7 +79,14 @@ const Sidebar = (props) => {
     <li className="menu-item">
     <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" />
       <Link  href="/contact">
-          <a title="contact" onClick = {() => handleCloseMenu()}>     {data.items[3].title}</a>
+          <a title="contact" onClick = {() => handleCloseMenu()}>{data.items[3].title}</a>
+      </Link>
+   </li>
+
+   <li className="menu-item">
+    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" />
+      <Link href="/shop">
+          <a title="shop" onClick = {() => handleCloseMenu()}>Shop</a>
       </Link>
    </li>
 </ul>
