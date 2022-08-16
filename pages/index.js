@@ -5,6 +5,7 @@ import Loading from '../components/Loading'
 import Image from 'next/image'
 import Layout from './../components/Layout';
 
+
 export default function Home() {
 
   const [data, setData] = useState(null)

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@stripe/react-stripe-js": "^1.9.0",
     "@stripe/stripe-js": "^1.32.0",
     "@wordpress/api-fetch": "^6.9.0",
     "axios": "^0.27.2",
@@ -29,9 +30,10 @@
     "read-more-react": "^1.0.10",
     "sass": "^1.53.0",
     "serverless-mysql": "^1.5.4",
-    "stripe": "^9.12.0"
+    "stripe": "^9.13.0"
   },
   "devDependencies": {
+    "@types/react": "^18.0.17",
     "autoprefixer": "^10.4.7",
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
