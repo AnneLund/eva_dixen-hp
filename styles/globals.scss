@@ -69,33 +69,38 @@ section{
   align-items: center; 
 
   figure{
-    picture{
-      margin-top: -18%;
-    }
+   padding: 0 2em;
+   a{
+    font-size: 1.5em;
+
+    &:hover{
+      color:#848484;
+     }
+   }
+    } 
 
     figcaption{
-      h5{
+      width: 40vw;
+      text-align: left;
+      margin: 0 1em;
+      h4{
        margin: 0;
-       font-size: 1em;  
-
-       &:hover{
-        color:#848484;
-       }
+       font-size: 1.5em;  
       }
     }
-    } 
 }
 
 @media screen and (max-width: 600px) {
   .deployments{
         display: flex;
         flex-direction: column;
-        margin: 10%;
+        figcaption{
+          width: auto;
+        }
       }
   }  
 
-.text{
-  text-align: left;
+
 
   h3{
   font-size: 3em;
@@ -106,7 +111,7 @@ section{
   font-size: 2em;
   margin: 0;
   }   
-  }
+  
 
 
 .practices{
