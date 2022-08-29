@@ -27,14 +27,19 @@ const Latest = () => {
  
     return(
 
-<section className="deployments">
+<section>
     <h1>Udgivelser</h1>
+    <div className="deployments">
     <figure>
         <picture>
         <Image className="bog" src="/bog.jpg" width={400} height={600}/>
         </picture>
      <figcaption>
-       <h3>Som et espeløv</h3> 
+     <h5><a href="https://muusmann-forlag.dk/som-et-espeloev/" target="_blank">Køb bogen her</a>  </h5>
+    </figcaption>    
+    </figure>
+<article className="text">
+ <h3>Som et espeløv</h3> 
        <h4> - en lille bog om traumer og hvordan man ryster dem af sig </h4>
        <p>Da Eva som 21-årig bliver udsat for en overvældende begivenhed, er det så svært for hende at acceptere, at hun fortrænger det.</p>
         
@@ -47,9 +52,8 @@ For stik imod hendes egne overbevisninger er traumer langtfra noget, der kun ske
 <p>Som et espeløv er en personlig og hjertevarm beretning, der har til formål at gøre os klogere på traumers natur og kroppens måde at reagere under en traumatisk hændelse – samt give kendskab til, hvordan traumet lejrer sig i kroppen, hvis det ikke bliver forløst.</p> 
 <p> Måske vigtigst af alt er det en fortælling om, hvordan man bearbejder traumer for på den måde at få det bedste ud af tilværelsen.</p>
 <p>I bogen vil der være konkrete og simple øvelser til netop dette.</p>
-        </figcaption>    
-    </figure>
-   
+</article>
+</div>      
 </section>
     )
 }
