@@ -33,7 +33,7 @@ if (!data) return
         <link rel="icon" href="/logochi.png" />
       </Head>
       <article className={styles.main}>
-        <h1 className={styles.grid}>{data.title.rendered}</h1>
+        <h1>Velkommen</h1>
  <picture className="picture">
 <Image 
 src="/eva.jpg" 

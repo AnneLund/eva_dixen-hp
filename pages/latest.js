@@ -27,11 +27,10 @@ const Latest = () => {
  
     return(
 
-<section>
+<section >
     <h1>Udgivelser</h1>
-    <article className="deployments">
+    <article className={styles.grid}>
     <figure>
-
         <picture>
         <Image className="bog" src="/bog.jpg" width={400} height={600}/>
         <h5><a href="https://muusmann-forlag.dk/som-et-espeloev/" target="_blank" rel="noreferrer">Køb bogen her</a>  </h5>

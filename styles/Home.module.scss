@@ -74,11 +74,14 @@ span{
 @media screen and (max-width: 600px) {
   .grid {
     width: 100%;
-    margin-top: 20%;
-    padding: 0;
+    margin-top: 0%;
+    padding: 0 10%;
     flex-direction: column;
-    font-size: 4.5em;
-    text-align: center; 
+    text-align: left; 
+
+    figure{
+      text-align: center;
+    }
 
   ul{
   justify-content: center;
