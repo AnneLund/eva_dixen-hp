@@ -24,8 +24,8 @@ const About = () => {
      
     return(
 
-<section className={styles.main}>
-    <h1>{data.title.rendered}</h1>
+<section>
+    <h1>Om Eva</h1>
       <article>
         {data.yoast_head_json.og_description}
     </article>

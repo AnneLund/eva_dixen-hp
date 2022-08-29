@@ -21,13 +21,13 @@ $color2: #ddd1b3;
     text-align: center;
     position: relative;
     z-index: 5;
+    margin: auto;
   
     
     figure{
       display: grid;
       grid-template-columns: 40vw 40vw;
-      margin: 0 2em;
-    
+      margin: auto 2em;
       text-align: left;
 
       h4{
@@ -74,14 +74,11 @@ span{
 @media screen and (max-width: 600px) {
   .grid {
     width: 100%;
-    margin-top: 0%;
-    padding: 0 10%;
+    margin: 0;
+    padding: 0;
     flex-direction: column;
-    text-align: left; 
-
-    figure{
-      text-align: center;
-    }
+    font-size: 4.5em;
+    text-align: center; 
 
   ul{
   justify-content: center;
