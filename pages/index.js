@@ -40,9 +40,7 @@ src="/eva.jpg"
 width={500} 
 height={500}
 />  
-</picture>       
-
-
+</picture>
       </article>
     </>
   )

@@ -31,8 +31,10 @@ a {
 
 h1{
   font-size: 6em;
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
+
+
 
 h1, h2, h3, h4, li{
   font-family: 'Caveat', cursive;
@@ -56,13 +58,11 @@ section{
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
   z-index: 5;
 }
 
 .deployments{
- 
   figure{
     margin-left: 10%;
     display: flex;
