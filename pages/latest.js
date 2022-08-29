@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.scss'
 import {useState, useEffect} from 'react'
 import Loading from '../components/Loading'
 import Image from 'next/image'
+import {bog} from '../public/bog.jpg'
 
 const Latest = () => {
     const [data, setData] = useState(null)
@@ -26,35 +27,30 @@ const Latest = () => {
  
     return(
 
-<section className={styles.main}>
-<h1>{data.title.rendered}</h1>
-    <article>
-        {data.yoast_head_json.og_description}
-        {/* <figure className={styles.figure}>
-            <picture>
-                <Image src="/bog.jpg" alt='sometespeloev' width={300} height={400}/>    
-            </picture>
-
-            <figcaption>
-                <h4>Som et espeløv - En lille bog om traumer, og hvordan man ryster dem af sig</h4>
-            <p>Som 21-årig bliver Eva udsat for et overgreb. Et overgreb, hun forsøger at fortrænge, men som bider sig fast i hendes krop.</p>
-            <p>
-                Da det først mange år senere går op for hende, at der kan være en forbindelse imellem de muskelspændinger, hun dagligt tynges af, 
-                og det gamle ubearbejdede traume, tvinger det hende til at forholde sig til alt det, hun helst vil glemme. 
-            </p>
-            <p>
-                For hvis hendes krop virkelig er fanget i et gammelt traume, hvordan slipper hun den så fri? 
-                Hvordan overbeviser hun den om, at den ikke længere er i fare?
-            </p> 
-            <Link href="https://muusmann-forlag.dk/som-et-espeloev/?fbclid=IwAR03kCrW6vsEZeDWHnyofq_wVuOGeVyW6hg0Z7eUOPkjzr_-dT16Wb59Bw4">
-               <a title='read-more'>Læs mere</a>
-                </Link>
-             </figcaption>
-             
-   
-        </figure> */}
-
-    </article>
+<section className="deployments">
+    <h1>Udgivelser</h1>
+    <figure>
+        <picture> 
+        <Image className="bog" src="/bog.jpg" width={400} height={600}/>
+        </picture>
+       
+        <figcaption>
+       <h3>Som et espeløv</h3> 
+       <h4> - en lille bog om traumer og hvordan man ryster dem af sig </h4>
+       <p>Da Eva som 21-årig bliver udsat for en overvældende begivenhed, er det så svært for hende at acceptere, at hun fortrænger det.</p>
+        
+        <p> Men som årene går, bliver det sværere og sværere for hende at føle sig tilpas i sin egen krop.</p>
+        <p>Da hun en dag læser, at traumer påvirker følelsen af bevægelses- frihed, slår det hende, at hendes krop måske er traumatiseret som følge af hændelsen for over et årti siden.</p>
+      <p>Det bliver starten på en lang rejse ind i en verden, hun aldrig før har beskæftiget sig med, nemlig kroppens anatomi og hjernens kemiske processer.
+        Men det, hun kunne læse sig frem til, var så opsigtsvækkende, at hun satte sig for at skrive bogen, du har i hænderne nu.
+For stik imod hendes egne overbevisninger er traumer langtfra noget, der kun sker for voldtægtsofre, krigsveteraner og flygtninge.</p> 
+<p>Traumer rammer almindelige mennesker, der lever almindelige liv. Derfor er denne bog relevant for alle, der oplever spændinger og ubehag i kroppen, eller som ønsker at være mere til stede i nuet og ikke mindst at blive bedre til at drage omsorg for sig selv.</p>
+<p>Som et espeløv er en personlig og hjertevarm beretning, der har til formål at gøre os klogere på traumers natur og kroppens måde at reagere under en traumatisk hændelse – samt give kendskab til, hvordan traumet lejrer sig i kroppen, hvis det ikke bliver forløst.</p> 
+<p> Måske vigtigst af alt er det en fortælling om, hvordan man bearbejder traumer for på den måde at få det bedste ud af tilværelsen.</p>
+<p>I bogen vil der være konkrete og simple øvelser til netop dette.</p>
+        </figcaption>
+       
+    </figure>
 </section>
     )
 }
