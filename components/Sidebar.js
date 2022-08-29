@@ -46,7 +46,7 @@ const Sidebar = (props) => {
         <ul>
 
     <li className="menu-item">   
-    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" />
+    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" alt="leaf" />
         <Link href="/">
        <a onClick = {() => handleCloseMenu()} title="home" >Forside</a> 
       </Link> 
@@ -54,7 +54,7 @@ const Sidebar = (props) => {
 
 
     <li className="menu-item">
-    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" />
+    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" alt="leaf" />
       <Link href="/about">
         <a onClick = {() => handleCloseMenu()} title="about">{data.items[0].title}</a>
       </Link>
@@ -62,7 +62,7 @@ const Sidebar = (props) => {
 
 
     <li className="menu-item">
-    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" />
+    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" alt="leaf" />
          <Link href="/latest">
          <a onClick = {() => handleCloseMenu()} title="latest">{data.items[1].title}</a>     
         </Link> 
@@ -70,21 +70,21 @@ const Sidebar = (props) => {
 
 
     <li className="menu-item">
-    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" />
+    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" alt="leaf"/>
       <Link href="/practices">
           <a onClick = {() => handleCloseMenu()} title="practices">{data.items[2].title}</a>     
       </Link>
     </li>
 
     <li className="menu-item">
-    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" />
+    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" alt="leaf" />
       <Link  href="/contact">
           <a title="contact" onClick = {() => handleCloseMenu()}>{data.items[3].title}</a>
       </Link>
    </li>
 
    <li className="menu-item">
-    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" />
+    <Image src="/leaf4li.png" width={25} height={25} className="leaf_menu" alt="leaf" />
       <Link href="/shop">
           <a title="shop" onClick = {() => handleCloseMenu()}>Shop</a>
       </Link>
