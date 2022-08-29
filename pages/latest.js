@@ -35,7 +35,7 @@ const Latest = () => {
         <Image className="bog" src="/bog.jpg" width={400} height={600}/>
         </picture>
      <figcaption>
-     <h5><a href="https://muusmann-forlag.dk/som-et-espeloev/" target="_blank">Køb bogen her</a>  </h5>
+     <h5><a href="https://muusmann-forlag.dk/som-et-espeloev/" target="_blank" rel="noreferrer">Køb bogen her</a>  </h5>
     </figcaption>    
     </figure>
 <article className="text">
