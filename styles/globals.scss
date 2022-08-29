@@ -63,6 +63,7 @@ section{
 }
 
 .deployments{
+
   figure{
     margin-left: 10%;
     display: flex;
@@ -70,38 +71,33 @@ section{
     align-items: center;  
 
     picture{
-      margin-top: 5%;
+      margin-top: -18%;
     }
-  
+
     figcaption{
       text-align: left;
-      margin: 0 10%;
+      margin: 0 5%;
    
     h3{
     font-size: 3em;
     margin: 0;
-  } 
+    } 
   
-  h4{
+    h4{
     font-size: 2em;
     margin: 0;
-  }
     }
+    } 
   }
 
   @media screen and (max-width: 600px) {
     figure{
           display: flex;
           flex-direction: column;
-          figcaption{
-            margin: 10% 0;
-          }
+          margin: 10%;
         }
-    }
-
-
+    }  
 }
-
 
 
 .practices{

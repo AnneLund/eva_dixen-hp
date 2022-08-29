@@ -30,7 +30,7 @@ const Latest = () => {
 <section className="deployments">
     <h1>Udgivelser</h1>
     <figure>
-        <picture> 
+        <picture>
         <Image className="bog" src="/bog.jpg" width={400} height={600}/>
         </picture>
      <figcaption>
