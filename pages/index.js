@@ -32,8 +32,8 @@ if (!data) return
         <meta name="description" content="Forfatter og foredragsholder Eva Dixen" />
         <link rel="icon" href="/logochi.png" />
       </Head>
-      <article className={styles.main}>
-        <h1 className={styles.grid}>{data.title.rendered}</h1>
+      <section>
+        <h1>Velkommen</h1>
  <picture className="picture">
 <Image 
 src="/eva.jpg" 
@@ -41,9 +41,7 @@ width={500}
 height={500}
 />  
 </picture>       
-
-
-      </article>
+      </section>
     </>
   )
 }

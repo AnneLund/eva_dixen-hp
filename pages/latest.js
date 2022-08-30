@@ -6,6 +6,7 @@ const Latest = () => {
 <section>
     <h1>Udgivelser</h1>
     <article className="deployments">
+        <div>
     <figure>
 
         <picture>
@@ -29,8 +30,10 @@ const Latest = () => {
         <p>Som et espeløv er en personlig og hjertevarm beretning, der har til formål at gøre os klogere på traumers natur og kroppens måde at reagere under en traumatisk hændelse – samt give kendskab til, hvordan traumet lejrer sig i kroppen, hvis det ikke bliver forløst.</p> 
         <p> Måske vigtigst af alt er det en fortælling om, hvordan man bearbejder traumer for på den måde at få det bedste ud af tilværelsen.</p>
         <p>I bogen vil der være konkrete og simple øvelser til netop dette.</p>
-    </figcaption>    
-</article>     
+    </figcaption> 
+    </div>   
+</article> 
+    
 </section>
     )
 }

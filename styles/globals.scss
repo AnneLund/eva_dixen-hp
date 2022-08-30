@@ -4,7 +4,6 @@ $color: #6f4419;
 $color1: #f2ece2;
 $color2: #ddd1b3;
 
-
 body, html {
   padding: 0;
   margin: 0;
@@ -40,13 +39,11 @@ h1, h2, h3, h4, li{
 #App {
   font-family: sans-serif;
   background-color:#F2E9E3;
- 
 }
 
 #page-wrap {
   text-align: center;
   overflow: auto;
-
 }
 
 section{
@@ -59,21 +56,12 @@ section{
   z-index: 5;
   article{
   width: 80%;
+  text-align: center;
   margin: 0 auto;
   padding: 0 auto;
-}
-}
-
-
-.deployments,
-article{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; 
 
   figure{
-    width: 100%;
+    padding: 0.1em;
    a{
     font-size: 1.5em;
 
@@ -85,23 +73,21 @@ article{
 
     figcaption{
       text-align: left;
+      margin: 0 1em;
       h4{
        margin: 0;
        font-size: 1.5em;  
       }
     }
 }
+}
 
-@media screen and (max-width: 600px) {
-  .deployments, article{
-        display: flex;
-        flex-direction: column;
-        figcaption{
-          width: auto;
-          
-        }
-      }
-  }  
+.deployments{
+  div{
+    display: flex;
+    flex-direction: row;
+  }
+}
 
   h3{
   font-size: 3em;
@@ -133,18 +119,6 @@ nav {
   align-items: center;
   position: relative;
 }
-
-@media screen and (max-width: 600px) {
-  nav{
-    margin: 10% 0;
-        display: flex;
-        flex-direction: column;
-        figcaption{
-          margin: 10% 0;
-        }
-      }
-  }
-
 
   ul{
    display: flex;
@@ -263,19 +237,33 @@ h3{
 }
 
 @media screen and (max-width: 600px) {
+  #App{
+         display: flex;
+         flex-direction: column;
+         width: auto;
+         margin: 2em auto;
+
+         .deployments{
+          div{
+            flex-direction: column;  
+          }
+         }
+       }
+     }  
+
+@media screen and (max-width: 600px) {
   form{
         width: 100%;
         margin: auto 0.5em;
         font-size: 3.5em;
       }
-     
   }
 
   @media screen and (max-width: 600px) {
     footer{
           font-size: 0.6em;
         }
-    }
+  }
 
 
 
